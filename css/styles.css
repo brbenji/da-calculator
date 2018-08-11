@@ -1,0 +1,87 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/*Color Pallette
+blue main #54B0BD
+red highlights #FE8A83
+light neutral #D0D2C4
+dark neutral #71867E
+green highligts #A9FBD7
+*/
+
+html{
+	background-color: #54b0bd;
+}
+
+h1{
+	font-size: 5em;
+	color: #d0d2c4;
+    text-shadow: 0.03em 0.01em 0em #FE8A83;
+    text-align: center;
+    padding: 0.3em 0.05em;	
+}
+
+hr{
+	margin:0 auto;
+	width: 87%;
+	border-color: #D0D2C4;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1.5em;
+    max-width: 38%;
+    min-width: 10em;
+    background-color: #71867e;
+    border: .2em solid rgba(254,138,131,0);
+    border-radius: 10%;
+    box-shadow: 0.5em 0.5em 2em inset;
+
+}
+
+.container:hover {
+	border: .2em solid #fe8a83;
+}
+
+input[type=text]{
+    position: relative;
+    margin: 0.1em auto;
+    font-size: 1em;
+    max-width: 90%;
+}
+
+input[type=button] {
+	position: relative;
+	min-width: 2em;
+	margin:1px auto;
+	border-radius: 7%;
+	padding: .1em;
+	font-size: 1em;
+	font-weight: bold;
+	background-color: #d0d2c4;
+	box-shadow: .05em .05em .1em #a9fbd7;
+
+}
+
+input[type=button]:hover {
+	background-color: #54B0BD;
+	border-color: #54B0BD;
+	box-shadow:none;
+}
+
+#rogue{
+	margin-left: -1.192em;
+}
+
+/*Phone View*/
+
+@media (max-width: 400px) {
+	h1{
+		font-size: 3em;
+		padding: 0.6em 0.05em;
+	}
+}
