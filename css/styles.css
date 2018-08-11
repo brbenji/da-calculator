@@ -1,6 +1,7 @@
 * {
 	padding: 0;
 	margin: 0;
+	transition-timing-function: ease;
 }
 
 /*Color Pallette
@@ -23,10 +24,12 @@ h1{
     padding: 0.3em 0.05em;	
 }
 
-hr{
-	margin:0 auto;
-	width: 87%;
-	border-color: #D0D2C4;
+hr.boop{
+    margin: 0 auto;
+    width: 87%;
+    height: 0.4px;
+    border-color: #D0D2C4;
+    background-color: #A9FBD7;
 }
 
 .container {
@@ -34,10 +37,11 @@ hr{
     text-align: center;
     margin: 0 auto;
     padding: 1.5em;
-    max-width: 38%;
+    max-width: 12em;
     min-width: 10em;
     background-color: #71867e;
     border: .2em solid rgba(254,138,131,0);
+
     border-radius: 10%;
     box-shadow: 0.5em 0.5em 2em inset;
 
@@ -45,6 +49,11 @@ hr{
 
 .container:hover {
 	border: .2em solid #fe8a83;
+	transition:border .5s;
+}
+
+.container:hover hr{
+	background-color: #FE8A83;
 }
 
 input[type=text]{
@@ -69,6 +78,7 @@ input[type=button] {
 
 input[type=button]:hover {
 	background-color: #54B0BD;
+	transition:background-color .3s;
 	border-color: #54B0BD;
 	box-shadow:none;
 }
